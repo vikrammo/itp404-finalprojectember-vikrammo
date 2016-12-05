@@ -1,0 +1,17 @@
+<h2> Here's a live stream update from my favorite Coupon Twitter feed:</h2>
+<h4> <a href = "http://www.twitter.com/coupons">Coupons Twitter </a> </h4>
+<br/><br/>
+
+<div class="object">
+  {{#each model as |tweet|}}
+
+<ul>
+  <li>
+	<p>	{{tweet.text}} </p>
+</li>
+</ul>
+
+<br/><br/>
+
+	{{/each}}
+</div>

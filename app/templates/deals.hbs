@@ -1,0 +1,17 @@
+<h2> Here are the best deals I've curated from across the interwebs! </h2>
+<br/><br/>
+
+<div class="object">
+  {{#each model as |product|}}
+
+<div class="product">
+	<p>	<b>Product name: </b> {{product.name}} </p>
+  <p> <b> About:</b> {{product.description}} </p>
+  <p> <b>Price: </b>${{product.price}} </p>
+  <p> <b>Link to deal: </b><a href = "{{product.url}}">{{product.url}}</a> </p>
+</div>
+
+<br/><br/>
+
+	{{/each}}
+</div>

@@ -1,0 +1,15 @@
+<h2> Tutorials:</h2>
+<br/><br/>
+
+<div class="object">
+  {{#each model as |tutorial|}}
+
+<div class = "tutorial">
+	<p>	<b>Video Title: </b> {{tutorial.name}} </p>
+    <p> <b>Video: </b> <a href = "{{tutorial.url}}">{{tutorial.url}}</a></p>
+</div>
+
+<br/><br/>
+
+	{{/each}}
+</div>

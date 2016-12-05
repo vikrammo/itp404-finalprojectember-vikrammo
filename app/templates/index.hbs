@@ -1,0 +1,28 @@
+<div class="jumbotron text-center">
+   <h1>Welcome to the Internet's best collection of awesome coupons and sweet deals</h1>
+   <h4>Visit the Vik's Deals tab for a collection of my personally curated database of deals, visit Twitter's Deals for a live stream of my favorite coupon twitter feed, visit Other Sources for my personally curated dabase of other recommended websites.
+      Finally, visit the Video Tutorials tab for some personally selected video tutorials. Happy saving! </h4>
+
+
+   <br/><br/>
+
+   <p>Start saving today, join our mailing list!</p>
+
+   <br/><br/>
+
+   <div class="form-horizontal form-group form-group-lg row">
+     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
+       {{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+     </div>
+     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
+       <button class="btn btn-primary btn-lg btn-block" {{action 'saveInvitation'}} disabled={{isDisabled}}>Request invitation</button>
+     </div>
+   </div>
+
+   {{#if responseMessage}}
+     <div class="alert alert-success">{{responseMessage}}</div>
+   {{/if}}
+
+   <br/><br/>
+
+</div>

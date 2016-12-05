@@ -1,0 +1,14 @@
+<h2> Others Sources</h2>
+
+<br/><br/>
+<div class="object">
+  {{#each model as |site|}}
+
+	<p>	<b>Site Name: </b> {{site.siteName}} </p>
+  <p> <b>Site URL: </b> <a href = "{{site.siteURL}}">{{site.siteURL}}</a> </p>
+
+
+<br/><br/>
+
+	{{/each}}
+</div>
